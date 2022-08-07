@@ -1,0 +1,180 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": "-- Grafana --",
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "limit": 100,
+          "name": "Annotations & Alerts",
+          "showIn": 0,
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
+    "id": 5,
+    "iteration": 1659875478171,
+    "links": [],
+    "panels": [
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 3,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "title": "",
+        "type": "welcome"
+      },
+      {
+        "datasource": null,
+        "description": "",
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 13,
+          "w": 5,
+          "x": 0,
+          "y": 3
+        },
+        "id": 4,
+        "links": [],
+        "options": {
+          "content": "<font size=\"6\">\n<a href=\"http://${server_url}:32400/\" target=\"_blank\">Plex</a><br>\n<a href=\"http://${server_url}:9091/\" target=\"_blank\">Transmission</a><br>\n<a href=\"http://${server_url}/static\" target=\"_blank\">Static Files</a><br>\n<a href=\"http://${server_url}:3000\" target=\"_blank\">Grafana</a><br>\n<a href=\"http://${server_url}:9090\" target=\"_blank\">Prometheus</a><br>\n<a href=\"http://${server_url}:9100\" target=\"_blank\">Node Exporter</a><br>\n<a href=\"http://${server_url}:9093\" target=\"_blank\">Alert Manager</a><br>\n<a href=\"http://${server_url}:8080\" target=\"_blank\">Cadvisor</a><br>\n<a href=\"http://${server_url}:9092\" target=\"_blank\">Push Gateway</a><br>\n</font>\n        ",
+          "mode": "html"
+        },
+        "pluginVersion": "7.3.7",
+        "title": "Services",
+        "type": "text"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "folderId": 0,
+        "gridPos": {
+          "h": 13,
+          "w": 7,
+          "x": 5,
+          "y": 3
+        },
+        "headings": true,
+        "id": 3,
+        "limit": 30,
+        "links": [],
+        "query": "",
+        "recent": true,
+        "search": false,
+        "starred": true,
+        "tags": [],
+        "title": "Dashboards",
+        "type": "dashlist"
+      },
+      {
+        "datasource": null,
+        "fieldConfig": {
+          "defaults": {
+            "custom": {}
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 13,
+          "w": 12,
+          "x": 12,
+          "y": 3
+        },
+        "id": 5,
+        "links": [],
+        "options": {
+          "feedUrl": "https://grafana.com/blog/news.xml"
+        },
+        "title": "Latest from the blog",
+        "type": "news"
+      }
+    ],
+    "schemaVersion": 26,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+      "list": [
+        {
+          "current": {
+            "selected": false,
+            "text": "192.168.1.201",
+            "value": "192.168.1.201"
+          },
+          "error": null,
+          "hide": 0,
+          "label": "Server Url",
+          "name": "server_url",
+          "options": [
+            {
+              "selected": true,
+              "text": "192.168.1.201",
+              "value": "192.168.1.201"
+            }
+          ],
+          "query": "192.168.1.201",
+          "skipUrlSync": false,
+          "type": "textbox"
+        }
+      ]
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {
+      "hidden": true,
+      "refresh_intervals": [
+        "5s",
+        "10s",
+        "30s",
+        "1m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "2h",
+        "1d"
+      ],
+      "time_options": [
+        "5m",
+        "15m",
+        "1h",
+        "6h",
+        "12h",
+        "24h",
+        "2d",
+        "7d",
+        "30d"
+      ],
+      "type": "timepicker"
+    },
+    "timezone": "browser",
+    "title": "Grafana Home",
+    "uid": "ExVs8Frnz",
+    "version": 6
+}
